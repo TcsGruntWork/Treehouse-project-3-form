@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+/* css reset styles*/
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border:0;
+}
+
+/* base styles */
+body {
+  font-family: "Dosis", sans-serif;
+  color:#1e1e2e;
+}
+
+/* utility / container */
+.container {
+  width:70%;
+  margin:0 auto;
+}
+
+/*header styles */
+header {
+  margin-bottom:3rem;
+}
+.site-heading {
+  background-color:#1e1e2e;
+  color:#fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding:1rem 0;
+}
+
+
+/* subheading | sub-text styles */
+.sub-heading-container {
+  border-bottom:5px solid #1e1e2e;
+  padding-bottom:2rem;
+  margin-bottom:5px;
+}
+.site-sub-heading,
+.sub-text {
+  text-align: center;
+}
+
+.site-sub-heading {
+  font-size:2rem;
+}
+
+.sub-text {
+  padding:0.5rem 0;
+  color:#bebebe;
+  font-size:1.2rem;
+}
+
+/* form styles */
+form {
+  padding:1rem;
+  border-top:2px solid #1e1e2e;
+}
+
+legend {
+  font-size:1.5rem;
+  font-weight:bold;
+  padding:1.5rem 0;
+}
+label {
+  color:#a5a5a5;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="phone"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+button,
+textarea,
+select  {
+  display:block;
+  width:100%;
+  padding:1rem 2rem;
+  margin-bottom:2rem;
+  background-color:#f0f0f0;
+  border:0;
+  outline:0;
+  border-radius: 5px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  border:2px solid #76d3bf;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  text-align:right;
+  color:#bebebe;
+}
+
+input[type="text"].zip {
+  width:40%;
+}
+
+.contact-field {
+  border-bottom:3px solid #1e1e2e;
+}
+
+.news-container {
+  margin:1rem 0;
+}
+
+textarea {
+  margin:1rem 0;
+}
+
+.submit-btn {
+  background-color:#76d3bf;
+  color:#fff;
+  font-size:1.3rem;
+}
+
+.submit-btn:hover {
+  background-color:#1e1e2e;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  color:#bebebe;
+  padding:1rem 0;
+}
+
+/* media queries */
+@media only screen and (min-width:768px) {
+  .contact-container {
+    display:flex;
+    flex-flow:row;
+    justify-content: space-between;
+  }
+  .contact-container input,
+  .contact-container .state-input {
+    flex-basis: 80%;
+  }
+
+  .contact-container label {
+    padding-top:0.5rem;
+  }
+}
