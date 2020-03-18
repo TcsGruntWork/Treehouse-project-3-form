@@ -150,16 +150,21 @@ textarea {
 /* media queries */
 @media only screen and (min-width:768px) {
   .contact-container {
-    display:flex;
-    flex-flow:row;
-    justify-content: space-between;
-  }
-  .contact-container input,
-  .contact-container .state-input {
-    flex-basis: 80%;
+   display:flex;
+   justify-content: space-between;
   }
 
+  .contact-container input,
+  .contact-container select {
+    flex-basis: 80%;
+  }
+  
   .contact-container label {
     padding-top:0.5rem;
+  }
+
+  .contact-container .zip {
+    flex-basis: 25%;
+    margin-right:55%;
   }
 }
